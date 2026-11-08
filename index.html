@@ -1722,7 +1722,7 @@ YOU MAY NOW REST.
     let ht; const ov = $("ov"), hs = () => { ov.textContent = "HOLDING..."; ht = setTimeout(() => { ov.hidden = true; done() }, 1800) }, he = () => { clearTimeout(ht); ov.textContent = "PRESS AND HOLD" };
     ov.onpointerdown = hs; ov.onpointerup = ov.onpointerleave = he; ov.onkeydown = e => { if ((e.key === "Enter" || e.key === " ") && !e.repeat) hs() }; ov.onkeyup = he; ov.oncontextmenu = e => e.preventDefault();
     /* ---------- slots: isi VIDEO, VOICE, IDPHOTO nanti ---------- */
-    const VIDEO = "video.mp4", VOICE = "", IDPHOTO = "";
+    const VIDEO = "video.mp4", VOICE = "audo.m4a", IDPHOTO = "";
     if (VIDEO) {
       const vf = $("vf"), holder = vf.innerHTML, v = document.createElement("video");
       v.src = VIDEO; v.controls = true; v.playsInline = true; v.preload = "metadata"; v.setAttribute("aria-label", "Graduation video");
