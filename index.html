@@ -1445,7 +1445,7 @@ YOU MAY NOW REST.
     sc.forEach(s => hio.observe(s));
     const rio = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("on"); rio.unobserve(e.target); const ls = e.target.querySelectorAll(".lr"); ls.length ? ls.forEach((_, i) => setTimeout(tick, i * 220)) : shim() } }), { threshold: .2 });
     document.querySelectorAll(".tm").forEach(el => { el.innerHTML = el.textContent.split("\n").map((t, i) => `<span class="lr" style="--d:${(i * .22).toFixed(2)}s">${t || " "}</span>`).join("\n") });
-    const PH = [{ s: "foto1.jpeg", c: "FIRST CONTACT" }, { s: "foto4.gif", c: "SIGNAL STRENGTH: MAXIMUM" }, { s: "foto2.jpeg", c: "ORBITING TOGETHER" }, { s: "foto3.jpeg", c: "MISSION COMPLETE" }, { s: "foto5", c: "THE LANDING" }, { s: "foto6", c: "CELEBRATION PROTOCOL" }];
+    const PH = [{ s: "foto1.jpeg", c: "FIRST CONTACT" }, { s: "foto4.gif", c: "SIGNAL STRENGTH: MAXIMUM" }, { s: "foto2.jpeg", c: "ORBITING TOGETHER" }, { s: "foto3.jpeg", c: "MISSION COMPLETE" }, { s: "foto5.jpg", c: "THE LANDING" }, { s: "foto6.jpg", c: "CELEBRATION PROTOCOL" }];
     { $("ph").innerHTML = PH.map((p, i) => `<figure class="rv">${p.s ? `<img src="${p.s}" alt="${p.c}" loading="lazy">` : `<div class="ns">NO SIGNAL</div>`}<figcaption>LOG ${String(i + 1).padStart(3, "0")} · ${p.c}</figcaption></figure>`).join("") }
     const KID = "foto_kecil.jpeg"; /* isi dengan nama file foto Feb kecil, mis. "foto_kecil.jpeg" */
     $("kid").innerHTML = KID ? `<img src="${KID}" alt="Little Febryan" loading="lazy">` : `<div class="ns">NO SIGNAL</div>`;
